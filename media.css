@@ -541,13 +541,13 @@ text-decoration: none;
     width: 100%;
     max-width: 50%;
     height: 35vh;
-    display: grid;
-    padding: 0.5rem;
+    display: inline;
     padding: 0.5rem;
   }
   .card1{
     width: 95%;
     height: 30vh;
+    flex: 0.2rem;
   }
   .card img, .card1 img {
     width: 100%;
@@ -558,8 +558,15 @@ text-decoration: none;
   flex-direction: row; 
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
-  
+  .card1-content {
+    padding: 0.4rem;
+    text-align: center;
+    position: relative;
+    height: 50%;
+
+  }
   .card1-content h3, p, .synopsis{
     font-size: 0.6rem;
   }
