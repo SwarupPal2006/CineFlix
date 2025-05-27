@@ -557,7 +557,7 @@ text-decoration: none;
  .whole{
   flex-direction: row; 
   align-items: center;
-  display: flex
+  display: flex;
 }
   
   .card1-content h3, p, .synopsis{
