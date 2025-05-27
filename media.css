@@ -105,7 +105,7 @@ animation: bounce 1.5s infinite ease-in-out;
 }
 
 .subtitle {
-  color: #0c14e7;
+  color: #212231;
   margin-bottom: 0.3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
@@ -256,21 +256,25 @@ animation: bounce 1.5s infinite ease-in-out;
   object-position: center;
 }
 .card1-content {
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: left;
   position: relative;
 }
 .learn{
-  display: inline-block;
-  padding: 0 3rem 0 5rem;
+  display: flex;
+  padding: 0 5rem 0 5rem;
   color: rgb(6, 102, 180);
   text-decoration: none;
   transition: background 0.3s;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
   
 }
 .learn:hover {
- color: #df0707;
- padding: 0 3rem 0 5rem;
+ color: #edd0c6;
+ background-color: #3333338f;
+ padding: 0 5rem 0 5rem;
 }
 .synopsis {
   font-size: 1rem;
@@ -489,7 +493,7 @@ text-decoration: none;
   .navbar nav {
     display: none;
     flex-direction: row;
-    background: #0e0d0d71;
+    background: #0e0d0dae;
     position: absolute;
     top: 100%;
     left: 0;
@@ -530,15 +534,37 @@ text-decoration: none;
   flex-direction: column;
    padding: 2rem 0.2rem 0 1rem;
    width: 100%;
+   height: auto;
   }
- .card-contain {
+  
+  .card-contain {
     width: 100%;
-    max-width: 92%;
-    height: 95vh;
+    max-width: 50%;
+    height: 50vh;
+    display: grid;
+    padding: 0.5rem;
+    padding: 0.5rem;
   }
+  .card1{
+    width: 95%;
+  }
+  .card1 img {
+    width: 100%;
+    height: 50%;
+    object-position: center;
+  }
+
+  
+  .card1-content h3, p, .synopsis{
+    font-size: 0.6rem;
+  }
+
+  
   .modal .modal-content{
     width: 90%;
     max-width: 450px;
     padding: 1rem; 
   }
 }
+
+
