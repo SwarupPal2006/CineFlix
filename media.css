@@ -527,7 +527,7 @@ text-decoration: none;
   .card-container {
     width: 100%;
     max-width: 100%;
-    height: 80vh;
+    height: 50vh;
   
   }
   .pop{
@@ -549,7 +549,7 @@ text-decoration: none;
     width: 95%;
     height: 30vh;
   }
-  .card1 img {
+  .card img, .card1 img {
     width: 100%;
     height: 50%;
     object-position: center;
