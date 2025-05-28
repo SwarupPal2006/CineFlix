@@ -558,7 +558,7 @@ text-decoration: none;
   flex-direction: row; 
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
+/*   flex-wrap: wrap; */
 }
   .card1-content {
     padding: 0.4rem;
