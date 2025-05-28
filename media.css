@@ -231,7 +231,7 @@ animation: bounce 1.5s infinite ease-in-out;
 .whole{
   display: flex;
   overflow-x: auto;
-  gap: 16px;
+  gap: 4.5px;
   padding: 0.3rem;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
