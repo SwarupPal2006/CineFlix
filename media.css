@@ -95,6 +95,7 @@ animation: bounce 1.5s infinite ease-in-out;
 .svg-image img {
  opacity: 0.85;
  border-radius: 8px;
+  width: 100%;
 }
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
