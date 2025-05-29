@@ -260,10 +260,8 @@ animation: bounce 1.5s infinite ease-in-out;
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.515);
   transition: transform 0.3s;
-  
-
 }
 .card1 img{
   width: 100%;
@@ -295,9 +293,9 @@ animation: bounce 1.5s infinite ease-in-out;
 }
 .synopsis {
   font-size: 1rem;
+  font-weight: 100px;
   color: #3333339d;
   justify-content: flex-start;
-  position-area: relative;
 }
 
 
@@ -318,8 +316,7 @@ animation: bounce 1.5s infinite ease-in-out;
 }
 
 .modal-content {
-  background-image: url(https://i.gifer.com/LCPT.gif);
-  background-size: cover;
+  background-color: #111;
   color: rgb(30, 234, 217);
   padding: 2rem ;
   max-width: 500px;
