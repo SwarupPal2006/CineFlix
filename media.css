@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -59,10 +60,9 @@ body {
   align-items: center;
   padding: 6rem 5rem 0 5rem;
   background-image: url(https://wallpapercave.com/wp/wp14325355.jpg);
-  /* background-position: center; */
   background-size: cover;
   background-repeat: none;
-  min-height: 90vh;
+  min-height: 95vh;
   gap: 2rem;
   max-height: fit-content;
 }
@@ -91,7 +91,10 @@ body {
 }
 .svg-image{
 animation: bounce 1.5s infinite ease-in-out;
-
+}
+.svg-image img {
+ opacity: 0.85;
+ border-radius: 8px;
 }
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
@@ -275,7 +278,8 @@ animation: bounce 1.5s infinite ease-in-out;
 .learn{
   display: flex;
   padding: 0.5rem 5rem 0.5rem 5rem;
-  color: rgb(6, 102, 180);
+  color: rgb(217, 236, 187);
+  background-color: #2a2a2a8f;
   text-decoration: none;
   transition: background 0.3s;
   bottom:2rem;
@@ -314,7 +318,9 @@ animation: bounce 1.5s infinite ease-in-out;
 }
 
 .modal-content {
-  background: white;
+  background-image: url(https://i.gifer.com/LCPT.gif);
+  background-size: cover;
+  color: rgb(30, 234, 217);
   padding: 2rem ;
   max-width: 500px;
   border-radius: 8px;
@@ -639,7 +645,6 @@ html:has(#dark-toggle:checked) .pop {
 
 html:has(#dark-toggle:checked) .card,
 html:has(#dark-toggle:checked) .card1,
-html:has(#dark-toggle:checked) .modal-content,
 html:has(#dark-toggle:checked) .review-card,
 html:has(#dark-toggle:checked) .review-form input,
 html:has(#dark-toggle:checked) .review-form textarea {
