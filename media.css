@@ -144,7 +144,7 @@ animation: bounce 1.5s infinite ease-in-out;
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.319);
   transition: transform 0.3s;
   width: 27%;
   height: 45vh;
@@ -313,6 +313,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   font-weight: 100px;
   color: #3333339d;
   justify-content: flex-start;
+  line-height: 1.5;
 }
 
 /* Modal */
