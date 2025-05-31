@@ -129,7 +129,7 @@ animation: bounce 1.5s infinite ease-in-out;
   padding-top: 1rem;
   padding-inline-start: 0.6rem;
   width: 100%;
-  height: 52vh;
+  height: 50vh;
   background-color: #e0e0e04d;
   border-radius: 8px;
   scroll-snap-type: x mandatory;
@@ -147,7 +147,7 @@ animation: bounce 1.5s infinite ease-in-out;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s;
   width: 27%;
-  height: 48vh;
+  height: 45vh;
   scroll-snap-align: start;
   flex: 0 0 auto;
  
@@ -162,30 +162,30 @@ animation: bounce 1.5s infinite ease-in-out;
 }
 
 .card-content {
-  padding: 1rem;
+  padding: 0.8rem;
   text-align: left;
   position: relative;
-  
+  height: 40%;
 }
 .card-content p{
-    font-size: small;
+    font-size: 15px;
     color: #3333339d;
     justify-content: flex-start;
     line-height: 1;    
 }
 .card-content h3 {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .card-content .duration {
   position: absolute;
-  background: rgba(0, 0, 0, 0.582);
+  bottom: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.579);
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
-  font-size: 0.8rem;
-  /* display: grid; */
-  justify-content: right;
+  font-size: 10px;
 }
 
 .card-content h3::after {
@@ -235,9 +235,9 @@ animation: bounce 1.5s infinite ease-in-out;
   text-align: center;
   transition: all 0.3s ease;
 }
+
 .toggle-btn:active::after {
   content: "\2713";
-  
 }
 /* populer */
 .pop{
@@ -251,7 +251,7 @@ animation: bounce 1.5s infinite ease-in-out;
   padding: 0.3rem;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #99999966;
 }
 .whole::-webkit-scrollbar {
@@ -265,16 +265,17 @@ animation: bounce 1.5s infinite ease-in-out;
   flex: 0 0 auto;
   gap: 1rem;
   padding: 0.5rem;
-  max-width: 24%;
-  height: 80vh;
+  max-width: 26%;
+  height: 620px;
 }
 .card1{
   position: relative;
   background: white;
-  border-radius: 8px;
+  border-radius: 7px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.515);
   transition: transform 0.3s;
+  height: 100%;
 }
 .card1 img{
   width: 100%;
@@ -285,33 +286,34 @@ animation: bounce 1.5s infinite ease-in-out;
   padding: 0.5rem;
   text-align: left;
   position: relative;
+  max-height: 40%;
+  font-size: 20px;
 }
-.learn{
+
+.learn {
+  position: absolute;
+  inset: 0;
   display: flex;
-  padding: 0.5rem 5rem 0.5rem 5rem;
-  color: rgb(217, 236, 187);
-  background-color: #2a2a2a8f;
-  text-decoration: none;
-  transition: background 0.3s;
-  bottom:2rem;
-  top: 5rem;
   justify-content: center;
-  position: sticky;
-  margin-top: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: rgba(232, 172, 32, 0.963);
+  height: 250px;
+  font-weight: 500;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.learn:hover {
- color: #2be085;
- background-color: #1412128f;
- padding: 0.5rem 5rem 0.5rem 5rem;
+.card1:hover .learn {
+  opacity: 1;
 }
 .synopsis {
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 100px;
   color: #3333339d;
   justify-content: flex-start;
 }
-
-
 
 /* Modal */
 .modal-toggle {
@@ -557,11 +559,11 @@ text-decoration: none;
   .card-container {
     width: 100%;
     max-width: 100%;
-    height: 45vh;
+    height: 310px;
   }
   .card {
-    width: 100%;
-    height: 40vh;
+    width: 250px;
+    height: 280px;
     margin: 0 auto;
   }
   .pop{
@@ -572,14 +574,9 @@ text-decoration: none;
   }
   
   .card-contain{
-    width: 100%;
-    max-width: 50%;
-    height: 40vh;
+    max-width: 210px;
+    height: 270px;
     padding: 0.3rem;
-  }
-  .card1{
-    width: 95%;
-    height: 38vh;
   }
   .card img, .card1 img {
     width: 100%;
@@ -587,10 +584,9 @@ text-decoration: none;
     object-position: center;
   }
  .whole{
-  flex-direction: row; 
   align-items: center;
-  display: flex;
   padding: 0.5rem;
+  width: 100%;
 }
   .card1-content {
     padding: 0.4rem;
@@ -598,15 +594,16 @@ text-decoration: none;
     position: relative;
     max-height: 50%;
   }
-  .card1-content h3, p, .synopsis{
-    font-size: 0.7rem;
+  .card1-content  p, .synopsis{
+    font-size: 10px;
+  }
+  .card1-content h3 {
+    font-size: 12px;
   }
   .learn {
-    font-size: 0.8rem;
-    padding: 0.2rem;
-    margin-top: 0.5rem;
+    font-size: 12px;
+    height: 150px;
   }
- 
   .modal .modal-content{
     width: 90%;
     max-width: 450px;
@@ -624,10 +621,9 @@ text-decoration: none;
   display: none;
   cursor: pointer;
 }
-html:has(#dark-toggle:checked) .theme-toggle:active  {
+html:has(#dark-toggle:checked) .theme-toggle:hover  {
    color: #e23b11;
   }
-
 
 html:has(#dark-toggle:checked) .theme-toggle-container {
   background: rgba(0,0,0,0.7);
