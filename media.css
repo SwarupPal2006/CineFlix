@@ -369,7 +369,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 /* Reviews */
 .section4{
   padding: 2.5rem 5rem 0 5rem;
-  background: #abb3d2a7;
+  background: #c6e6e471;
 }
 .reviews-container {
   display: flex;
@@ -403,6 +403,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 0.5rem;
+  box-shadow: #111  0px 0px 10px;
 }
 
 .review-form {
@@ -429,8 +430,13 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 200;
+  font-size: 20px;
 }
-
+.review-form button:hover {
+  background: #aac30d;
+  color: black;
+}
 /* Footer */
 .footer {
   background: #111;
@@ -647,13 +653,16 @@ html:has(#dark-toggle:checked) .card1-content p,
 html:has(#dark-toggle:checked) .card1-content .synopsis{
   color: #e0e0e0;
 }
-html:has(#dark-toggle:checked) .navbar,
-html:has(#dark-toggle:checked) .footer,
+html:has(#dark-toggle:checked) .navbar,.footer{
+  background-color: #000000;
+}
 html:has(#dark-toggle:checked) .section,
 html:has(#dark-toggle:checked) .pop {
   background-color: #1e1e1e;
 }
-
+html:has(#dark-toggle:checked) .section4 {
+  background: #484c4b4f;
+}
 html:has(#dark-toggle:checked) .card,
 html:has(#dark-toggle:checked) .card1,
 html:has(#dark-toggle:checked) .review-card,
@@ -668,3 +677,5 @@ html:has(#dark-toggle:checked) .watch-btn,
 html:has(#dark-toggle:checked) .toggle-btn {
   background-color: #400df6ac;
 }
+
+
